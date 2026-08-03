@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hala Flora - Flowers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+
+    <nav id="navbar" class="navbar">
+      <div class="nav-inner">
+        <div class="swoosh-bg"></div>
+        <a href="index.html" class="nav-logo">
+          <img src="assets/images/logo.png" alt="Hala Flora Logo">
+        </a>
+        <div class="nav-links-desktop">
+          <a href="index.html" class="nav-link ">Home<div class="indicator"></div></a>
+          <a href="about.html" class="nav-link ">About<div class="indicator"></div></a>
+          <a href="flowers.html" class="nav-link active">Flowers<div class="indicator"></div></a>
+          <a href="contact.html" class="nav-link ">Contact<div class="indicator"></div></a>
+        </div>
+        <div class="nav-actions">
+          <a href="https://wa.me/254700123456" target="_blank" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i><span>WhatsApp Us</span>
+          </a>
+          <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About</a>
+        <a href="flowers.html" class="active">Flowers</a>
+        <a href="contact.html" class="">Contact</a>
+      </div>
+    </nav>
+  
+<div class="nav-spacer"></div>
+
+<style>
+  .header-section { text-align: center; padding: 40px 24px 20px; }
+  .page-title { font-size: 40px; color: var(--green); font-family: var(--font-serif); margin-bottom: 16px; }
+  .page-subtitle { font-size: 16px; color: var(--text-light); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+  
+  .filter-section { text-align: center; margin-bottom: 40px; }
+  .filter-inner { display: flex; align-items: center; justify-content: center; gap: 16px; padding: 0 24px; flex-wrap: wrap; }
+  .filter-label { font-size: 14px; color: var(--text-light); font-weight: 500; }
+  .filter-pill { background: #F6EFEB; padding: 10px 20px; border-radius: 20px; color: var(--text-light); font-size: 14px; font-weight: 500; cursor: pointer; border: none; transition: background 0.2s; }
+  .filter-pill:hover { background: #E7EFE9; }
+  .filter-pill.active { background: #E7EFE9; color: var(--green); font-weight: bold; }
+  
+  .grid-container { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; max-width: 1200px; margin: 0 auto; padding: 0 24px 80px; }
+  .flower-card { background: #F6EFEB; border-radius: 20px; overflow: hidden; width: calc(33.333% - 16px); min-width: 300px; display: flex; flex-direction: column; }
+  @media(max-width:992px){ .flower-card{ width: calc(50% - 12px); } }
+  @media(max-width:768px){ .flower-card{ width: 100%; } }
+  .card-img-container { width: 100%; height: 250px; position: relative; }
+  .card-img-container img { width: 100%; height: 100%; object-fit: cover; }
+  .tag-badge { position: absolute; top: 16px; left: 16px; background: var(--red); color: var(--white); font-size: 12px; font-weight: bold; padding: 6px 12px; border-radius: 12px; }
+  .card-content { padding: 24px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
+  .fc-title { font-size: 24px; color: var(--green); font-family: var(--font-serif); margin-bottom: 8px; }
+  .fc-subtitle { font-size: 14px; color: var(--text-light); margin-bottom: 20px; }
+  .inquire-btn { background: #EBE1D8; padding: 12px 20px; border-radius: 20px; color: var(--text-light); font-size: 13px; font-weight: 700; transition: transform 0.2s; border: none; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+  .inquire-btn i { color: var(--white); }
+  .inquire-btn:hover { background: #DFD2C5; transform: scale(1.05); }
+</style>
+
+<div class="header-section fade-in-view">
+  <h1 class="page-title">Our Floral Collection</h1>
+  <p class="page-subtitle">Explore our curated selection of premium blooms, handpicked for quality and vibrance. Perfect for any occasion or global export.</p>
+</div>
+
+<div class="filter-section fade-in-view" data-delay="100">
+  <div class="filter-inner">
+    <span class="filter-label">≡ Filter By:</span>
+    <button class="filter-pill active">All Categories</button>
+    <button class="filter-pill">Premium Roses</button>
+    <button class="filter-pill">Spray Roses</button>
+    <button class="filter-pill">Carnations</button>
+    <button class="filter-pill">Fillers</button>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="flower-card fade-in-view" data-delay="150">
+    <div class="card-img-container">
+      <img src="assets/images/roses.png" alt="Premium Roses">
+      <div class="tag-badge">Best Seller</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title">Premium Roses</h3>
+        <p class="fc-subtitle">Headsize 5+, Length 50-80CM. The epitome of elegance.</p>
+      </div>
+      <a href="contact.html" class="inquire-btn">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="flower-card fade-in-view" data-delay="250">
+    <div class="card-img-container">
+      <img src="assets/images/about.png" alt="Intermediate Roses">
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title">Intermediate Roses</h3>
+        <p class="fc-subtitle">Headsize 4+, Length 40-70CM. Versatile and beautiful.</p>
+      </div>
+      <a href="contact.html" class="inquire-btn">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="flower-card fade-in-view" data-delay="350">
+    <div class="card-img-container">
+      <img src="assets/images/spray.png" alt="Spray Roses">
+      <div class="tag-badge">Popular</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title">Regular Spray Roses</h3>
+        <p class="fc-subtitle">Buds 5+, Length 40-70CM. Perfect for vibrant, textured arrangements.</p>
+      </div>
+      <a href="contact.html" class="inquire-btn">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="flower-card fade-in-view" data-delay="150">
+    <div class="card-img-container">
+      <img src="assets/images/gypsophila.png" alt="Gypsophila">
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title">Gypsophila (Baby's Breath)</h3>
+        <p class="fc-subtitle">Delicate, tiny white blooms. The perfect filler for any arrangement.</p>
+      </div>
+      <a href="contact.html" class="inquire-btn">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="flower-card fade-in-view" data-delay="250">
+    <div class="card-img-container">
+      <img src="assets/images/hypericum.png" alt="Hypericum">
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title">Hypericum Berries</h3>
+        <p class="fc-subtitle">Fresh red berries to add contrast and texture to bouquets.</p>
+      </div>
+      <a href="contact.html" class="inquire-btn">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="flower-card fade-in-view" data-delay="350">
+    <div class="card-img-container">
+      <img src="assets/images/carnations.png" alt="Carnations">
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title">Premium Carnations</h3>
+        <p class="fc-subtitle">Dense, ruffled pink petals. Long-lasting and beautiful.</p>
+      </div>
+      <a href="contact.html" class="inquire-btn">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="flower-card fade-in-view" data-delay="150">
+    <div class="card-img-container">
+      <img src="assets/images/product.png" alt="Seasonal Fillers">
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title">Seasonal Fillers</h3>
+        <p class="fc-subtitle">Complete your arrangements with our fresh, seasonal selection of foliage.</p>
+      </div>
+      <a href="contact.html" class="inquire-btn">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Simple filter logic for this static page
+  document.addEventListener('DOMContentLoaded', () => {
+    const pills = document.querySelectorAll('.filter-pill');
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        // A real filter would hide/show elements based on category attribute here.
+        // For static demo, we just keep them all visible or one could write simple JS to filter by text.
+      });
+    });
+  });
+</script>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-col footer-col-large">
+          <div class="footer-logo-box">
+            <img src="assets/images/logo.png" alt="Hala Flora">
+          </div>
+          <p class="footer-tagline">Exporting fresh cut flowers globally with care. From the heart of Kenya directly to your port of entry.</p>
+          <div class="social-icons">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">Our Story</a>
+          <a href="flowers.html" class="footer-link">Floral Collection</a>
+          <a href="contact.html" class="footer-link">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h3>Legal & Support</h3>
+          <a href="#" class="footer-link">Sustainability</a>
+          <a href="#" class="footer-link">Shipping Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="footer-col footer-col-large">
+          <h3>Contact Us</h3>
+          <div class="footer-contact">
+            <i class="fa-solid fa-envelope"></i>
+            <div>info@halaflora.co.ke<br>sales@halaflora.co.ke</div>
+          </div>
+          <div class="footer-contact">
+            <i class="fa-solid fa-phone-alt"></i>
+            <div>+254 700 123 456</div>
+          </div>
+          <div class="footer-contact">
+            <i class="fa-solid fa-map-marker-alt"></i>
+            <div>Nairobi, Kenya<br>JKIA Export Zone</div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <div class="copyright-divider"></div>
+        <p class="copyright-text">© 2024 Hala Flora. Powered by <a href="https://royalsoftwares.co.ke/">Royal Software Solutions</a>. All rights reserved.</p>
+      </div>
+    </footer>
+  
+    <script src="js/main.js"></script>
+</body>
+</html>

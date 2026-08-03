@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hala Flora - About Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+
+    <nav id="navbar" class="navbar">
+      <div class="nav-inner">
+        <div class="swoosh-bg"></div>
+        <a href="index.html" class="nav-logo">
+          <img src="assets/images/logo.png" alt="Hala Flora Logo">
+        </a>
+        <div class="nav-links-desktop">
+          <a href="index.html" class="nav-link ">Home<div class="indicator"></div></a>
+          <a href="about.html" class="nav-link active">About<div class="indicator"></div></a>
+          <a href="flowers.html" class="nav-link ">Flowers<div class="indicator"></div></a>
+          <a href="contact.html" class="nav-link ">Contact<div class="indicator"></div></a>
+        </div>
+        <div class="nav-actions">
+          <a href="https://wa.me/254700123456" target="_blank" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i><span>WhatsApp Us</span>
+          </a>
+          <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="flowers.html" class="">Flowers</a>
+        <a href="contact.html" class="">Contact</a>
+      </div>
+    </nav>
+  
+<div class="nav-spacer"></div>
+
+<style>
+  .hero-section {
+    width: 100%; height: 400px;
+    background: url('assets/images/hero_bg.png') center/cover no-repeat;
+    position: relative;
+  }
+  .hero-overlay {
+    position: absolute; top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.4);
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px; text-align: center;
+  }
+  .hero-content { max-width: 800px; }
+  .hero-title { font-size: 64px; color: var(--white); font-family: var(--font-serif); }
+  @media(max-width:768px){ .hero-title{ font-size: 40px; } }
+  .hero-subtitle { font-size: 16px; color: var(--white); margin-top: 16px; line-height: 1.6; }
+  
+  .about-block { display: flex; align-items: center; justify-content: space-between; gap: 40px; background: var(--white); padding: 40px; border-radius: 20px; }
+  @media(max-width:768px){ .about-block{ flex-direction: column; } }
+  .about-text-container { flex: 1; }
+  .about-text-container h2 { font-size: 32px; color: var(--green); font-family: var(--font-serif); margin-bottom: 20px; }
+  .about-text-container p { font-size: 15px; color: var(--text-light); line-height: 1.6; margin-bottom: 16px; }
+  .about-img { width: 400px; height: 400px; border-radius: 20px; object-fit: cover; }
+  @media(max-width:768px){ .about-img{ width: 100%; height: 300px; } }
+  
+  .cards-grid { display: flex; justify-content: space-between; gap: 24px; margin-top: 60px; }
+  @media(max-width:768px){ .cards-grid { flex-direction: column; } }
+  .info-card { flex: 1; padding: 40px; border-radius: 20px; text-align: center; }
+  .icon-circle { width: 40px; height: 40px; border-radius: 50%; background: var(--white); display: inline-flex; align-items: center; justify-content: center; color: var(--green); font-size: 20px; margin-bottom: 16px; box-shadow: 0 4px 5px rgba(0,0,0,0.1); }
+  .card-title { font-size: 14px; color: var(--green); font-weight: bold; letter-spacing: 1px; margin-bottom: 10px; }
+  .card-desc { font-size: 14px; color: var(--text-light); line-height: 1.6; }
+  
+  .process-section { background-color: #F8F9F8; padding: 80px 40px; }
+  .timeline { display: flex; justify-content: center; align-items: flex-start; max-width: 1200px; margin: 0 auto; position: relative; }
+  @media(max-width:768px){ .timeline { flex-direction: column; gap: 40px; align-items: center; } }
+  .timeline-line { position: absolute; top: 40px; left: 10%; right: 10%; height: 1px; background: #DDD; z-index: 0; }
+  @media(max-width:768px){ .timeline-line { display: none; } }
+  .timeline-item { flex: 1; text-align: center; z-index: 1; padding: 0 20px; display: flex; flex-direction: column; align-items: center; }
+  .timeline-circle { width: 80px; height: 80px; border-radius: 50%; background: var(--white); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-bottom: 16px; }
+  .timeline-title { font-size: 16px; color: var(--green); font-weight: bold; margin-bottom: 8px; }
+  
+  .cta-wrapper { padding: 80px 24px; background: #F8F9F8; }
+  .cta-banner { display: flex; max-width: 1200px; margin: 0 auto; background: var(--green); border-radius: 24px; overflow: hidden; }
+  @media(max-width:768px){ .cta-banner { flex-direction: column; } }
+  .cta-text { padding: 80px; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+  @media(max-width:768px){ .cta-text { padding: 40px; } }
+  .cta-text h2 { font-size: 32px; color: var(--white); font-family: var(--font-serif); margin-bottom: 20px; }
+  .cta-text p { color: rgba(255,255,255,0.8); margin-bottom: 24px; }
+  .cta-image { width: 50%; object-fit: cover; }
+  @media(max-width:768px){ .cta-image { width: 100%; height: 300px; } }
+</style>
+
+<div class="hero-section">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1 class="hero-title">Our Story Roots in Kenyan Soil</h1>
+      <p class="hero-subtitle">From our dedicated farms to your port, discover the passion and precision behind every premium bloom we export.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-box fade-in-view">
+  <div class="about-block">
+    <div class="about-text-container">
+      <h2>Your Trusted Partner in Premium Fresh Cut Flower Exports</h2>
+      <p>At Hala Flora, we bring the beauty of Kenya's finest blooms directly to your port of entry anywhere in the world. From our own farms and trusted partner growers, we ensure high quality flowers and seamless global deliveries tailored to your needs.</p>
+      <p>Our flowers are hand-picked, carefully packed, and shipped within hours to preserve freshness and vibrance, guaranteeing that every delivery meets the highest international standards.</p>
+    </div>
+    <img src="assets/images/about.png" class="about-img" alt="Hala Flora About">
+  </div>
+  
+  <div class="cards-grid">
+    <div class="info-card" style="background-color: #FFF0F5;">
+      <div class="icon-circle"><i class="fa-solid fa-globe-africa"></i></div>
+      <div class="card-title">GLOBAL REACH</div>
+      <div class="card-desc">Efficient weekly airfreight schedules to Europe, Australia, Middle East, North America, and Asia.</div>
+    </div>
+    <div class="info-card" style="background-color: #F4F0FB;">
+      <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
+      <div class="card-title">FARM FRESH QUALITY</div>
+      <div class="card-desc">Hand-picked, meticulously packed, and shipped within hours to preserve vibrance.</div>
+    </div>
+    <div class="info-card" style="background-color: #F0F2F0;">
+      <div class="icon-circle"><i class="fa-solid fa-handshake"></i></div>
+      <div class="card-title">TRUSTED NETWORK</div>
+      <div class="card-desc">Strong partnerships and professional logistics ensure consistency and timely delivery.</div>
+    </div>
+  </div>
+</div>
+
+<div class="process-section fade-in-view" data-delay="150">
+  <div style="text-align: center; margin-bottom: 60px;">
+    <div style="font-size: 12px; color: #1E824C; font-weight: bold; letter-spacing: 2px; margin-bottom: 8px;">OUR PROCESS</div>
+    <h2 class="section-title">Farm to Port Logistics</h2>
+    <p class="section-subtitle" style="max-width: 600px; margin: 16px auto 0;">A seamless journey ensuring your premium blooms arrive fresh, vibrant, and on time, every time.</p>
+  </div>
+  
+  <div class="timeline">
+    <div class="timeline-line"></div>
+    <div class="timeline-item">
+      <div class="timeline-circle"><i class="fa-solid fa-search"></i></div>
+      <div class="timeline-title">1. Browse & Select</div>
+      <div class="card-desc">Choose from our premium flower selection at affordable prices.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-circle"><i class="fa-solid fa-shopping-cart"></i></div>
+      <div class="timeline-title">2. Place Order</div>
+      <div class="card-desc">Book with us through our seamless, intuitive ordering system.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-circle"><i class="fa-solid fa-plane"></i></div>
+      <div class="timeline-title">3. Logistics</div>
+      <div class="card-desc">We handle custom clearance and logistics completely.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-circle"><i class="fa-solid fa-check-circle"></i></div>
+      <div class="timeline-title">4. Fresh Delivery</div>
+      <div class="card-desc">Your flowers arrive fresh and on time, ready for market.</div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-wrapper fade-in-view" data-delay="150">
+  <div class="cta-banner">
+    <div class="cta-text">
+      <h2>Ready to Partner with Us?</h2>
+      <p>Contact us today to discuss bulk standing orders or custom floral assortments for your market.</p>
+      <a href="contact.html" class="btn" style="background: #26A65B;">Submit Inquiry</a>
+    </div>
+    <img src="assets/images/warehouse.png" class="cta-image" alt="Warehouse">
+  </div>
+</div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-col footer-col-large">
+          <div class="footer-logo-box">
+            <img src="assets/images/logo.png" alt="Hala Flora">
+          </div>
+          <p class="footer-tagline">Exporting fresh cut flowers globally with care. From the heart of Kenya directly to your port of entry.</p>
+          <div class="social-icons">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">Our Story</a>
+          <a href="flowers.html" class="footer-link">Floral Collection</a>
+          <a href="contact.html" class="footer-link">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h3>Legal & Support</h3>
+          <a href="#" class="footer-link">Sustainability</a>
+          <a href="#" class="footer-link">Shipping Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="footer-col footer-col-large">
+          <h3>Contact Us</h3>
+          <div class="footer-contact">
+            <i class="fa-solid fa-envelope"></i>
+            <div>info@halaflora.co.ke<br>sales@halaflora.co.ke</div>
+          </div>
+          <div class="footer-contact">
+            <i class="fa-solid fa-phone-alt"></i>
+            <div>+254 700 123 456</div>
+          </div>
+          <div class="footer-contact">
+            <i class="fa-solid fa-map-marker-alt"></i>
+            <div>Nairobi, Kenya<br>JKIA Export Zone</div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <div class="copyright-divider"></div>
+        <p class="copyright-text">© 2024 Hala Flora. Powered by <a href="https://royalsoftwares.co.ke/">Royal Software Solutions</a>. All rights reserved.</p>
+      </div>
+    </footer>
+  
+    <script src="js/main.js"></script>
+</body>
+</html>
