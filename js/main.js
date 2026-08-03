@@ -94,3 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    setTimeout(() => {
+      preloader.classList.add('loaded');
+    }, 500);
+  }
+});
