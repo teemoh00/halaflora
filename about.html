@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +16,15 @@
           <img src="assets/images/logo.png" alt="Hala Flora Logo">
         </a>
         <div class="nav-links-desktop">
-          <a href="index.html" class="nav-link ">Home<div class="indicator"></div></a>
-          <a href="about.html" class="nav-link active">About<div class="indicator"></div></a>
-          <a href="flowers.html" class="nav-link ">Flowers<div class="indicator"></div></a>
-          <a href="contact.html" class="nav-link ">Contact<div class="indicator"></div></a>
+          <a href="index.html" class="nav-link "><span data-i18n="nav_home">Home</span><div class="indicator"></div></a>
+          <a href="about.html" class="nav-link active"><span data-i18n="nav_about">About</span><div class="indicator"></div></a>
+          <a href="flowers.html" class="nav-link "><span data-i18n="nav_flowers">Flowers</span><div class="indicator"></div></a>
+          <a href="contact.html" class="nav-link "><span data-i18n="nav_contact">Contact</span><div class="indicator"></div></a>
         </div>
         <div class="nav-actions">
+          <button id="lang-toggle" class="lang-toggle">ع</button>
           <a href="https://wa.me/254700123456" target="_blank" class="btn btn-whatsapp">
-            <i class="fa-brands fa-whatsapp"></i><span>WhatsApp Us</span>
+            <i class="fa-brands fa-whatsapp"></i><span data-i18n="btn_whatsapp">WhatsApp Us</span>
           </a>
           <button id="mobile-menu-btn" class="mobile-menu-btn">
             <i class="fa-solid fa-bars"></i>
@@ -31,10 +32,10 @@
         </div>
       </div>
       <div id="mobile-menu" class="mobile-menu">
-        <a href="index.html" class="">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="flowers.html" class="">Flowers</a>
-        <a href="contact.html" class="">Contact</a>
+        <a href="index.html" class="" data-i18n="nav_home">Home</a>
+        <a href="about.html" class="active" data-i18n="nav_about">About</a>
+        <a href="flowers.html" class="" data-i18n="nav_flowers">Flowers</a>
+        <a href="contact.html" class="" data-i18n="nav_contact">Contact</a>
       </div>
     </nav>
   
@@ -95,8 +96,8 @@
 <div class="hero-section">
   <div class="hero-overlay">
     <div class="hero-content">
-      <h1 class="hero-title">Our Story Roots in Kenyan Soil</h1>
-      <p class="hero-subtitle">From our dedicated farms to your port, discover the passion and precision behind every premium bloom we export.</p>
+      <h1 class="hero-title" data-i18n="about_hero_title">Our Story Roots in Kenyan Soil</h1>
+      <p class="hero-subtitle" data-i18n="about_hero_subtitle">From our dedicated farms to your port, discover the passion and precision behind every premium bloom we export.</p>
     </div>
   </div>
 </div>
@@ -104,9 +105,9 @@
 <div class="container-box fade-in-view">
   <div class="about-block">
     <div class="about-text-container">
-      <h2>Your Trusted Partner in Premium Fresh Cut Flower Exports</h2>
-      <p>At Hala Flora, we bring the beauty of Kenya's finest blooms directly to your port of entry anywhere in the world. From our own farms and trusted partner growers, we ensure high quality flowers and seamless global deliveries tailored to your needs.</p>
-      <p>Our flowers are hand-picked, carefully packed, and shipped within hours to preserve freshness and vibrance, guaranteeing that every delivery meets the highest international standards.</p>
+      <h2 data-i18n="about_main_title">Your Trusted Partner in Premium Fresh Cut Flower Exports</h2>
+      <p data-i18n="about_main_p1">At Hala Flora, we bring the beauty of Kenya's finest blooms directly to your port of entry anywhere in the world. From our own farms and trusted partner growers, we ensure high quality flowers and seamless global deliveries tailored to your needs.</p>
+      <p data-i18n="about_main_p2">Our flowers are hand-picked, carefully packed, and shipped within hours to preserve freshness and vibrance, guaranteeing that every delivery meets the highest international standards.</p>
     </div>
     <img src="assets/images/about.png" class="about-img" alt="Hala Flora About">
   </div>
@@ -114,50 +115,50 @@
   <div class="cards-grid">
     <div class="info-card" style="background-color: #FFF0F5;">
       <div class="icon-circle"><i class="fa-solid fa-globe-africa"></i></div>
-      <div class="card-title">GLOBAL REACH</div>
-      <div class="card-desc">Efficient weekly airfreight schedules to Europe, Australia, Middle East, North America, and Asia.</div>
+      <div class="card-title" data-i18n="feat_global">GLOBAL REACH</div>
+      <div class="card-desc" data-i18n="feat_global_desc">Efficient weekly airfreight schedules to Europe, Australia, Middle East, North America, and Asia.</div>
     </div>
     <div class="info-card" style="background-color: #F4F0FB;">
       <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
-      <div class="card-title">FARM FRESH QUALITY</div>
-      <div class="card-desc">Hand-picked, meticulously packed, and shipped within hours to preserve vibrance.</div>
+      <div class="card-title" data-i18n="feat_fresh">FARM FRESH QUALITY</div>
+      <div class="card-desc" data-i18n="feat_fresh_desc">Hand-picked, meticulously packed, and shipped within hours to preserve vibrance.</div>
     </div>
     <div class="info-card" style="background-color: #F0F2F0;">
       <div class="icon-circle"><i class="fa-solid fa-handshake"></i></div>
-      <div class="card-title">TRUSTED NETWORK</div>
-      <div class="card-desc">Strong partnerships and professional logistics ensure consistency and timely delivery.</div>
+      <div class="card-title" data-i18n="feat_network">TRUSTED NETWORK</div>
+      <div class="card-desc" data-i18n="feat_network_desc">Strong partnerships and professional logistics ensure consistency and timely delivery.</div>
     </div>
   </div>
 </div>
 
 <div class="process-section fade-in-view" data-delay="150">
   <div style="text-align: center; margin-bottom: 60px;">
-    <div style="font-size: 12px; color: #1E824C; font-weight: bold; letter-spacing: 2px; margin-bottom: 8px;">OUR PROCESS</div>
-    <h2 class="section-title">Farm to Port Logistics</h2>
-    <p class="section-subtitle" style="max-width: 600px; margin: 16px auto 0;">A seamless journey ensuring your premium blooms arrive fresh, vibrant, and on time, every time.</p>
+    <div style="font-size: 12px; color: #1E824C; font-weight: bold; letter-spacing: 2px; margin-bottom: 8px;" data-i18n="process_pre">OUR PROCESS</div>
+    <h2 class="section-title" data-i18n="process_title">Farm to Port Logistics</h2>
+    <p class="section-subtitle" style="max-width: 600px; margin: 16px auto 0;" data-i18n="process_subtitle">A seamless journey ensuring your premium blooms arrive fresh, vibrant, and on time, every time.</p>
   </div>
   
   <div class="timeline">
     <div class="timeline-line"></div>
     <div class="timeline-item">
       <div class="timeline-circle"><i class="fa-solid fa-search"></i></div>
-      <div class="timeline-title">1. Browse & Select</div>
-      <div class="card-desc">Choose from our premium flower selection at affordable prices.</div>
+      <div class="timeline-title" data-i18n="proc_1">1. Browse & Select</div>
+      <div class="card-desc" data-i18n="proc_1_desc">Choose from our premium flower selection at affordable prices.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-circle"><i class="fa-solid fa-shopping-cart"></i></div>
-      <div class="timeline-title">2. Place Order</div>
-      <div class="card-desc">Book with us through our seamless, intuitive ordering system.</div>
+      <div class="timeline-title" data-i18n="proc_2">2. Place Order</div>
+      <div class="card-desc" data-i18n="proc_2_desc">Book with us through our seamless, intuitive ordering system.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-circle"><i class="fa-solid fa-plane"></i></div>
-      <div class="timeline-title">3. Logistics</div>
-      <div class="card-desc">We handle custom clearance and logistics completely.</div>
+      <div class="timeline-title" data-i18n="proc_3">3. Logistics</div>
+      <div class="card-desc" data-i18n="proc_3_desc">We handle custom clearance and logistics completely.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-circle"><i class="fa-solid fa-check-circle"></i></div>
-      <div class="timeline-title">4. Fresh Delivery</div>
-      <div class="card-desc">Your flowers arrive fresh and on time, ready for market.</div>
+      <div class="timeline-title" data-i18n="proc_4">4. Fresh Delivery</div>
+      <div class="card-desc" data-i18n="proc_4_desc">Your flowers arrive fresh and on time, ready for market.</div>
     </div>
   </div>
 </div>
@@ -165,9 +166,9 @@
 <div class="cta-wrapper fade-in-view" data-delay="150">
   <div class="cta-banner">
     <div class="cta-text">
-      <h2>Ready to Partner with Us?</h2>
-      <p>Contact us today to discuss bulk standing orders or custom floral assortments for your market.</p>
-      <a href="contact.html" class="btn" style="background: #26A65B;">Submit Inquiry</a>
+      <h2 data-i18n="cta_ready">Ready to Partner with Us?</h2>
+      <p data-i18n="cta_ready_desc">Contact us today to discuss bulk standing orders or custom floral assortments for your market.</p>
+      <a href="contact.html" class="btn" style="background: #26A65B;" data-i18n="btn_inquiry">Submit Inquiry</a>
     </div>
     <img src="assets/images/warehouse.png" class="cta-image" alt="Warehouse">
   </div>
@@ -179,7 +180,7 @@
           <div class="footer-logo-box">
             <img src="assets/images/logo.png" alt="Hala Flora">
           </div>
-          <p class="footer-tagline">Exporting fresh cut flowers globally with care. From the heart of Kenya directly to your port of entry.</p>
+          <p class="footer-tagline" data-i18n="footer_tagline">Exporting fresh cut flowers globally with care. From the heart of Kenya directly to your port of entry.</p>
           <div class="social-icons">
             <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
@@ -188,21 +189,21 @@
           </div>
         </div>
         <div class="footer-col">
-          <h3>Quick Links</h3>
-          <a href="index.html" class="footer-link">Home</a>
-          <a href="about.html" class="footer-link">Our Story</a>
-          <a href="flowers.html" class="footer-link">Floral Collection</a>
-          <a href="contact.html" class="footer-link">Contact Us</a>
+          <h3 data-i18n="footer_quick_links">Quick Links</h3>
+          <a href="index.html" class="footer-link" data-i18n="nav_home">Home</a>
+          <a href="about.html" class="footer-link" data-i18n="footer_our_story">Our Story</a>
+          <a href="flowers.html" class="footer-link" data-i18n="footer_floral_collection">Floral Collection</a>
+          <a href="contact.html" class="footer-link" data-i18n="footer_contact_us">Contact Us</a>
         </div>
         <div class="footer-col">
-          <h3>Legal & Support</h3>
-          <a href="#" class="footer-link">Sustainability</a>
-          <a href="#" class="footer-link">Shipping Policy</a>
-          <a href="#" class="footer-link">Terms of Service</a>
-          <a href="#" class="footer-link">Privacy Policy</a>
+          <h3 data-i18n="footer_legal_support">Legal & Support</h3>
+          <a href="#" class="footer-link" data-i18n="footer_sustainability">Sustainability</a>
+          <a href="#" class="footer-link" data-i18n="footer_shipping">Shipping Policy</a>
+          <a href="#" class="footer-link" data-i18n="footer_terms">Terms of Service</a>
+          <a href="#" class="footer-link" data-i18n="footer_privacy">Privacy Policy</a>
         </div>
         <div class="footer-col footer-col-large">
-          <h3>Contact Us</h3>
+          <h3 data-i18n="footer_contact_us">Contact Us</h3>
           <div class="footer-contact">
             <i class="fa-solid fa-envelope"></i>
             <div>info@halaflora.co.ke<br>sales@halaflora.co.ke</div>
@@ -219,10 +220,13 @@
       </div>
       <div class="copyright-container">
         <div class="copyright-divider"></div>
-        <p class="copyright-text">© 2024 Hala Flora. Powered by <a href="https://royalsoftwares.co.ke/">Royal Software Solutions</a>. All rights reserved.</p>
+        <p class="copyright-text" data-i18n="footer_designed">Designed by Leverage Creatives</p>
+        <p class="copyright-text" data-i18n="footer_powered">powered by <a href="royalsoftwares.co.ke">Royal sofwares solutions</a></p>
+        <p class="copyright-text" data-i18n="footer_rights">© 2026 Hala Flora. All rights reserved.</p>
       </div>
     </footer>
   
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

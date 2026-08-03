@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +16,15 @@
           <img src="assets/images/logo.png" alt="Hala Flora Logo">
         </a>
         <div class="nav-links-desktop">
-          <a href="index.html" class="nav-link ">Home<div class="indicator"></div></a>
-          <a href="about.html" class="nav-link ">About<div class="indicator"></div></a>
-          <a href="flowers.html" class="nav-link ">Flowers<div class="indicator"></div></a>
-          <a href="contact.html" class="nav-link active">Contact<div class="indicator"></div></a>
+          <a href="index.html" class="nav-link "><span data-i18n="nav_home">Home</span><div class="indicator"></div></a>
+          <a href="about.html" class="nav-link "><span data-i18n="nav_about">About</span><div class="indicator"></div></a>
+          <a href="flowers.html" class="nav-link "><span data-i18n="nav_flowers">Flowers</span><div class="indicator"></div></a>
+          <a href="contact.html" class="nav-link active"><span data-i18n="nav_contact">Contact</span><div class="indicator"></div></a>
         </div>
         <div class="nav-actions">
+          <button id="lang-toggle" class="lang-toggle">ع</button>
           <a href="https://wa.me/254700123456" target="_blank" class="btn btn-whatsapp">
-            <i class="fa-brands fa-whatsapp"></i><span>WhatsApp Us</span>
+            <i class="fa-brands fa-whatsapp"></i><span data-i18n="btn_whatsapp">WhatsApp Us</span>
           </a>
           <button id="mobile-menu-btn" class="mobile-menu-btn">
             <i class="fa-solid fa-bars"></i>
@@ -31,10 +32,10 @@
         </div>
       </div>
       <div id="mobile-menu" class="mobile-menu">
-        <a href="index.html" class="">Home</a>
-        <a href="about.html" class="">About</a>
-        <a href="flowers.html" class="">Flowers</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="index.html" class="" data-i18n="nav_home">Home</a>
+        <a href="about.html" class="" data-i18n="nav_about">About</a>
+        <a href="flowers.html" class="" data-i18n="nav_flowers">Flowers</a>
+        <a href="contact.html" class="active" data-i18n="nav_contact">Contact</a>
       </div>
     </nav>
   
@@ -78,21 +79,22 @@
   .form-textarea { resize: vertical; min-height: 150px; }
   .submit-btn { background: var(--red); color: var(--white); border: none; border-radius: 25px; padding: 16px 32px; font-size: 15px; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
   .submit-btn:hover { background: #C83232; }
+  [dir="rtl"] .submit-btn .fa-paper-plane { transform: scaleX(-1); }
 </style>
 
 <div class="contact-header">
-  <h1 class="page-title">Get in Touch</h1>
-  <p class="page-subtitle">Contact us for inquiries about exporting fresh cut flowers and our logistics services. Our team is ready to assist you.</p>
+  <h1 class="page-title" data-i18n="contact_title">Get in Touch</h1>
+  <p class="page-subtitle" data-i18n="contact_subtitle">Contact us for inquiries about exporting fresh cut flowers and our logistics services. Our team is ready to assist you.</p>
 </div>
 
 <div class="contact-grid">
   <div class="left-col">
     <div class="card-tan">
-      <h2 class="card-tan-title">Global Sales Team</h2>
+      <h2 class="card-tan-title" data-i18n="cnt_sales_team">Global Sales Team</h2>
       <div class="contact-item">
         <div class="icon-circle">✉</div>
         <div>
-          <div class="contact-label">Email Us</div>
+          <div class="contact-label" data-i18n="cnt_email_us">Email Us</div>
           <div class="contact-value">info@halaflora.co.ke</div>
           <div class="contact-value">sales@halaflora.co.ke</div>
         </div>
@@ -100,13 +102,13 @@
       <div class="contact-item">
         <div class="icon-circle">✆</div>
         <div>
-          <div class="contact-label">Call Us</div>
+          <div class="contact-label" data-i18n="cnt_call_us">Call Us</div>
           <div class="contact-value">+254 783 900 674</div>
           <div class="contact-value">+254 741 322 254</div>
         </div>
       </div>
       <a href="https://wa.me/254700123456" class="wa-btn">
-        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        <i class="fa-brands fa-whatsapp"></i> <span data-i18n="cnt_chat_wa">Chat on WhatsApp</span>
       </a>
     </div>
     
@@ -116,7 +118,7 @@
           <div class="map-pin">📍 Nairobi, Kenya</div>
         </div>
       </div>
-      <div class="map-text">
+      <div class="map-text" data-i18n="cnt_map_text">
         We export to Europe, Australia, the Middle East, North America, and Asia with efficient weekly airfreight schedules.
       </div>
     </div>
@@ -124,25 +126,25 @@
   
   <div class="right-col">
     <div class="form-card">
-      <h2 class="card-tan-title">Send an Inquiry</h2>
-      <p class="form-subtitle">Fill out the form below and our team will get back to you shortly.</p>
+      <h2 class="card-tan-title" data-i18n="cnt_form_title">Send an Inquiry</h2>
+      <p class="form-subtitle" data-i18n="cnt_form_sub">Fill out the form below and our team will get back to you shortly.</p>
       
       <form action="#" onsubmit="alert('Please connect this form to a backend or use mailto logic.'); return false;">
         <div class="form-row">
           <div class="form-group">
-            <label class="input-label">FIRST NAME</label>
-            <input type="text" class="form-input" placeholder="Your First Name">
+            <label class="input-label" data-i18n="cnt_lbl_fname">FIRST NAME</label>
+            <input type="text" class="form-input" placeholder="Your First Name" data-i18n-plh="cnt_plh_fname">
           </div>
           <div class="form-group">
-            <label class="input-label">EMAIL ADDRESS *</label>
-            <input type="email" class="form-input" placeholder="Your Email Address" required>
+            <label class="input-label" data-i18n="cnt_lbl_email">EMAIL ADDRESS *</label>
+            <input type="email" class="form-input" placeholder="Your Email Address" data-i18n-plh="cnt_plh_email" required>
           </div>
         </div>
         <div class="form-group">
-          <label class="input-label">MESSAGE *</label>
-          <textarea class="form-input form-textarea" placeholder="How can we help you?" required></textarea>
+          <label class="input-label" data-i18n="cnt_lbl_msg">MESSAGE *</label>
+          <textarea class="form-input form-textarea" placeholder="How can we help you?" data-i18n-plh="cnt_plh_msg" required></textarea>
         </div>
-        <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="btn_send_msg">Send Message</span></button>
       </form>
     </div>
   </div>
@@ -154,7 +156,7 @@
           <div class="footer-logo-box">
             <img src="assets/images/logo.png" alt="Hala Flora">
           </div>
-          <p class="footer-tagline">Exporting fresh cut flowers globally with care. From the heart of Kenya directly to your port of entry.</p>
+          <p class="footer-tagline" data-i18n="footer_tagline">Exporting fresh cut flowers globally with care. From the heart of Kenya directly to your port of entry.</p>
           <div class="social-icons">
             <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
@@ -163,21 +165,21 @@
           </div>
         </div>
         <div class="footer-col">
-          <h3>Quick Links</h3>
-          <a href="index.html" class="footer-link">Home</a>
-          <a href="about.html" class="footer-link">Our Story</a>
-          <a href="flowers.html" class="footer-link">Floral Collection</a>
-          <a href="contact.html" class="footer-link">Contact Us</a>
+          <h3 data-i18n="footer_quick_links">Quick Links</h3>
+          <a href="index.html" class="footer-link" data-i18n="nav_home">Home</a>
+          <a href="about.html" class="footer-link" data-i18n="footer_our_story">Our Story</a>
+          <a href="flowers.html" class="footer-link" data-i18n="footer_floral_collection">Floral Collection</a>
+          <a href="contact.html" class="footer-link" data-i18n="footer_contact_us">Contact Us</a>
         </div>
         <div class="footer-col">
-          <h3>Legal & Support</h3>
-          <a href="#" class="footer-link">Sustainability</a>
-          <a href="#" class="footer-link">Shipping Policy</a>
-          <a href="#" class="footer-link">Terms of Service</a>
-          <a href="#" class="footer-link">Privacy Policy</a>
+          <h3 data-i18n="footer_legal_support">Legal & Support</h3>
+          <a href="#" class="footer-link" data-i18n="footer_sustainability">Sustainability</a>
+          <a href="#" class="footer-link" data-i18n="footer_shipping">Shipping Policy</a>
+          <a href="#" class="footer-link" data-i18n="footer_terms">Terms of Service</a>
+          <a href="#" class="footer-link" data-i18n="footer_privacy">Privacy Policy</a>
         </div>
         <div class="footer-col footer-col-large">
-          <h3>Contact Us</h3>
+          <h3 data-i18n="footer_contact_us">Contact Us</h3>
           <div class="footer-contact">
             <i class="fa-solid fa-envelope"></i>
             <div>info@halaflora.co.ke<br>sales@halaflora.co.ke</div>
@@ -194,10 +196,13 @@
       </div>
       <div class="copyright-container">
         <div class="copyright-divider"></div>
-        <p class="copyright-text">© 2024 Hala Flora. Powered by <a href="https://royalsoftwares.co.ke/">Royal Software Solutions</a>. All rights reserved.</p>
+        <p class="copyright-text" data-i18n="footer_designed">Designed by Leverage Creatives</p>
+        <p class="copyright-text" data-i18n="footer_powered">powered by <a href="royalsoftwares.co.ke">Royal sofwares solutions</a></p>
+        <p class="copyright-text" data-i18n="footer_rights">© 2026 Hala Flora. All rights reserved.</p>
       </div>
     </footer>
   
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
