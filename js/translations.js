@@ -17,7 +17,7 @@ const translations = {
     "footer_terms": "Terms of Service",
     "footer_privacy": "Privacy Policy",
     "footer_designed": "Designed by Leverage Creatives",
-    "footer_powered": "powered by <a href=\"royalsoftwares.co.ke\">Royal sofwares solutions</a>",
+    "footer_powered": "powered by <a href=\"https://royalsoftwares.co.ke/\" target=\"_blank\" rel=\"noopener noreferrer\">Royal sofwares solutions</a>",
     "footer_rights": "© 2026 Hala Flora. All rights reserved.",
     
     // Home Page
@@ -137,7 +137,7 @@ const translations = {
     "footer_terms": "شروط الخدمة",
     "footer_privacy": "سياسة الخصوصية",
     "footer_designed": "صمم بواسطة Leverage Creatives",
-    "footer_powered": "بدعم من <a href=\"royalsoftwares.co.ke\">Royal sofwares solutions</a>",
+    "footer_powered": "بدعم من <a href=\"https://royalsoftwares.co.ke/\" target=\"_blank\" rel=\"noopener noreferrer\">Royal sofwares solutions</a>",
     "footer_rights": "© 2026 هلا فلورا. جميع الحقوق محفوظة.",
     
     // Home Page
