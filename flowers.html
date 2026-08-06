@@ -83,103 +83,530 @@
 <div class="filter-section fade-in-view" data-delay="100">
   <div class="filter-inner">
     <span class="filter-label" data-i18n="filter_by">≡ Filter By:</span>
-    <button class="filter-pill active" data-i18n="filter_all">All Categories</button>
-    <button class="filter-pill" data-i18n="filter_prem_roses">Premium Roses</button>
-    <button class="filter-pill" data-i18n="filter_spray_roses">Spray Roses</button>
-    <button class="filter-pill" data-i18n="filter_carnations">Carnations</button>
-    <button class="filter-pill" data-i18n="filter_fillers">Fillers</button>
+    <button class="filter-pill active" data-category="all" data-i18n="filter_all">All Categories</button>
+    <button class="filter-pill" data-category="premium_roses" data-i18n="filter_prem_roses">Premium Roses</button>
+    <button class="filter-pill" data-category="super_intermediate_roses" data-i18n="nav_super_intermediate_roses">Super Intermediate Roses</button>
+    <button class="filter-pill" data-category="special_sprays" data-i18n="nav_special_sprays">Special Sprays</button>
   </div>
 </div>
 
-<div class="grid-container">
-  <div class="flower-card fade-in-view" data-delay="150">
+<div class="grid-container" id="flower-grid">
+  <!-- PREMIUM ROSES -->
+  <div class="flower-card" data-category="premium_roses">
     <div class="card-img-container">
-      <img src="assets/images/roses.png" alt="Premium Roses">
-      <div class="tag-badge" data-i18n="badge_best_seller">Best Seller</div>
+      <img src="assets/premium_roses/ever_red.jpg" alt="Ever Red" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
     </div>
     <div class="card-content">
       <div>
-        <h3 class="fc-title" data-i18n="col_prem_roses">Premium Roses</h3>
-        <p class="fc-subtitle" data-i18n="flw_prem_roses_desc">Headsize 5+, Length 50-80CM. The epitome of elegance.</p>
+        <h3 class="fc-title" data-i18n="flw_name_ever_red">Ever Red</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_red">Red</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80/90 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 7 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
       <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
-  
-  <div class="flower-card fade-in-view" data-delay="250">
+
+  <div class="flower-card" data-category="premium_roses">
     <div class="card-img-container">
-      <img src="assets/images/about.png" alt="Intermediate Roses">
+      <img src="assets/premium_roses/mandala.jpg" alt="Mandala" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
     </div>
     <div class="card-content">
       <div>
-        <h3 class="fc-title" data-i18n="flw_int_roses">Intermediate Roses</h3>
-        <p class="fc-subtitle" data-i18n="flw_int_roses_desc">Headsize 4+, Length 40-70CM. Versatile and beautiful.</p>
+        <h3 class="fc-title" data-i18n="flw_name_mandala">Mandala</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_color_white_pink">Bi Color (White/pink)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
       <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
-  
-  <div class="flower-card fade-in-view" data-delay="350">
+
+  <div class="flower-card" data-category="premium_roses">
     <div class="card-img-container">
-      <img src="assets/images/spray.png" alt="Spray Roses">
-      <div class="tag-badge" data-i18n="badge_popular">Popular</div>
+      <img src="assets/premium_roses/hotspot.jpg" alt="Hotspot" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
     </div>
     <div class="card-content">
       <div>
-        <h3 class="fc-title" data-i18n="flw_reg_spray">Regular Spray Roses</h3>
-        <p class="fc-subtitle" data-i18n="flw_reg_spray_desc">Buds 5+, Length 40-70CM. Perfect for vibrant, textured arrangements.</p>
+        <h3 class="fc-title" data-i18n="flw_name_hotspot">Hotspot</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_ceres">Ceres</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
       <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
-  
-  <div class="flower-card fade-in-view" data-delay="150">
+
+  <div class="flower-card" data-category="premium_roses">
     <div class="card-img-container">
-      <img src="assets/images/gypsophila.png" alt="Gypsophila">
+      <img src="assets/premium_roses/paloma_royale.jpg" alt="Paloma Royale" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
     </div>
     <div class="card-content">
       <div>
-        <h3 class="fc-title" data-i18n="flw_gyp">Gypsophila (Baby's Breath)</h3>
-        <p class="fc-subtitle" data-i18n="flw_gyp_desc">Delicate, tiny white blooms. The perfect filler for any arrangement.</p>
+        <h3 class="fc-title" data-i18n="flw_name_paloma_royale">Paloma Royale</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_ceres">Ceres</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
       <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
-  
-  <div class="flower-card fade-in-view" data-delay="250">
+
+  <div class="flower-card" data-category="premium_roses">
     <div class="card-img-container">
-      <img src="assets/images/hypericum.png" alt="Hypericum">
+      <img src="assets/premium_roses/pink_floyd.jpg" alt="Pink Floyd" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
     </div>
     <div class="card-content">
       <div>
-        <h3 class="fc-title" data-i18n="flw_hyp">Hypericum Berries</h3>
-        <p class="fc-subtitle" data-i18n="flw_hyp_desc">Fresh red berries to add contrast and texture to bouquets.</p>
+        <h3 class="fc-title" data-i18n="flw_name_pink_floyd">Pink Floyd</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_hot_pink">Hot Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
       <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
-  
-  <div class="flower-card fade-in-view" data-delay="350">
+
+  <div class="flower-card" data-category="premium_roses">
     <div class="card-img-container">
-      <img src="assets/images/carnations.png" alt="Carnations">
+      <img src="assets/premium_roses/fluence.jpg" alt="Fluence" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
     </div>
     <div class="card-content">
       <div>
-        <h3 class="fc-title" data-i18n="flw_carnations">Premium Carnations</h3>
-        <p class="fc-subtitle" data-i18n="flw_carnations_desc">Dense, ruffled pink petals. Long-lasting and beautiful.</p>
+        <h3 class="fc-title" data-i18n="flw_name_fluence">Fluence</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour_white_pink">Bi-Colour (White/Pink)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80/90 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
       <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
-  
-  <div class="flower-card fade-in-view" data-delay="150">
+
+  <div class="flower-card" data-category="premium_roses">
     <div class="card-img-container">
-      <img src="assets/images/product.png" alt="Seasonal Fillers">
+      <img src="assets/premium_roses/paloma_vintage.jpg" alt="Paloma Vintage" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
     </div>
     <div class="card-content">
       <div>
-        <h3 class="fc-title" data-i18n="flw_fillers">Seasonal Fillers</h3>
-        <p class="fc-subtitle" data-i18n="flw_fillers_desc">Complete your arrangements with our fresh, seasonal selection of foliage.</p>
+        <h3 class="fc-title" data-i18n="flw_name_paloma_vintage">Paloma Vintage</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour">Bi-colour</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="premium_roses">
+    <div class="card-img-container">
+      <img src="assets/premium_roses/paloma.jpg" alt="Paloma" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_paloma">Paloma</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour">Bi-colour</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="premium_roses">
+    <div class="card-img-container">
+      <img src="assets/premium_roses/superstition.jpg" alt="Superstition" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_superstition">Superstition</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_salmon">Salmon</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80/90 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="premium_roses">
+    <div class="card-img-container">
+      <img src="assets/premium_roses/jumilia.jpg" alt="Jumilia" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_jumilia">Jumilia</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour_white_red">Bi-Colour (White/Red)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="premium_roses">
+    <div class="card-img-container">
+      <img src="assets/premium_roses/pomarosa.jpg" alt="Pomarosa" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_pomarosa">Pomarosa</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_peach">Peach</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80/90 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="premium_roses">
+    <div class="card-img-container">
+      <img src="assets/premium_roses/albatros.jpg" alt="Albatros" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_albatros">Albatros</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_white">White</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="premium_roses">
+    <div class="card-img-container">
+      <img src="assets/premium_roses/yelloween.jpg" alt="Yelloween" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_yelloween">Yelloween</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_yellow">Yellow</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80/90 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 7 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="premium_roses">
+    <div class="card-img-container">
+      <img src="assets/premium_roses/roxanne.jpg" alt="Roxanne" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_roxanne">Roxanne</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_cream_peach">Cream Peach</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="premium_roses">
+    <div class="card-img-container">
+      <img src="assets/premium_roses/novavita.jpg" alt="Novavita" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_novavita">Novavita</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_white">White</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 7 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="premium_roses">
+    <div class="card-img-container">
+      <img src="assets/premium_roses/proud.jpg" alt="Proud" onerror="this.onerror=null; this.src='assets/images/roses.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_premium_roses">Premium Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_proud">Proud</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_white">White</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- SUPER INTERMEDIATE ROSES -->
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/madam_red.jpg" alt="Madam Red" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_madam_red">Madam Red</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_red">Red</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/revival.jpg" alt="Revival" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_revival">Revival</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_pink">Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/madam_ceres.jpg" alt="Madam Ceres" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_madam_ceres">Madam Ceres</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_ceres">Ceres</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/pink_athena.jpg" alt="Pink Athena" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_pink_athena">Pink Athena</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_pink">Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/fire_and_flame.jpg" alt="Fire and Flame" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_fire_and_flame">Fire and Flame</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour_red_yellow">Bi-Colour (Red/Yellow)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 4.5 - 5.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/confidential.jpg" alt="Confidential" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_confidential">Confidential</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_orange">Orange</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/athena_royale.jpg" alt="Athena Royale" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_athena_royale">Athena Royale</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_pink">Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/gold_finch.jpg" alt="Gold Finch" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_gold_finch">Gold Finch</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_yellow">Yellow</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/deep_purple.jpg" alt="Deep Purple" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_deep_purple">Deep Purple</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour_purple_lilac">Bi colour(Purple/Lilac)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/good_times.jpg" alt="Good Times" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_good_times">Good Times</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_yellow">Yellow</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 5.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="super_intermediate_roses">
+    <div class="card-img-container">
+      <img src="assets/super_intermediate_roses/athena.jpg" alt="Athena">
+      <div class="tag-badge" data-i18n="cat_badge_super_intermediate_roses">Super Intermediate Roses</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_athena">Athena</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_white">White</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- SPECIAL SPRAYS -->
+  <div class="flower-card" data-category="special_sprays">
+    <div class="card-img-container">
+      <img src="assets/special_sprays/red_trend_setter.jpg" alt="Red Trend Setter">
+      <div class="tag-badge" data-i18n="cat_badge_special_sprays">Special Sprays</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_red_trend_setter">Red Trend Setter</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_red">Red</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="special_sprays">
+    <div class="card-img-container">
+      <img src="assets/special_sprays/apricot_lace.jpg" alt="Apricot Lace">
+      <div class="tag-badge" data-i18n="cat_badge_special_sprays">Special Sprays</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_apricot_lace">Apricot Lace</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_apricot">Apricot</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="special_sprays">
+    <div class="card-img-container">
+      <img src="assets/special_sprays/silva_pink.jpg" alt="Silva Pink">
+      <div class="tag-badge" data-i18n="cat_badge_special_sprays">Special Sprays</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_silva_pink">Silva Pink</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_pink">Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 3 - 5<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="special_sprays">
+    <div class="card-img-container">
+      <img src="assets/special_sprays/royal_magic.jpg" alt="Royal Magic">
+      <div class="tag-badge" data-i18n="cat_badge_special_sprays">Special Sprays</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_royal_magic">Royal Magic</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_ceres">Ceres</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="special_sprays">
+    <div class="card-img-container">
+      <img src="assets/special_sprays/summer_rose.jpg" alt="Summer Rose">
+      <div class="tag-badge" data-i18n="cat_badge_special_sprays">Special Sprays</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_summer_rose">Summer Rose</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_cream_peach">Cream/Peach</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="special_sprays">
+    <div class="card-img-container">
+      <img src="assets/special_sprays/mansfield_park.jpg" alt="Mansfield Park">
+      <div class="tag-badge" data-i18n="cat_badge_special_sprays">Special Sprays</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_mansfield_park">Mansfield Park</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour_blush">Bi-Colour (Blush)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 3 - 5<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="special_sprays">
+    <div class="card-img-container">
+      <img src="assets/special_sprays/ice_flow.jpg" alt="Ice Flow">
+      <div class="tag-badge" data-i18n="cat_badge_special_sprays">Special Sprays</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_ice_flow">Ice Flow</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_white">White</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="special_sprays">
+    <div class="card-img-container">
+      <img src="assets/special_sprays/julietta.jpg" alt="Julietta">
+      <div class="tag-badge" data-i18n="cat_badge_special_sprays">Special Sprays</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_julietta">Julietta</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_pink">Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="special_sprays">
+    <div class="card-img-container">
+      <img src="assets/special_sprays/julietta_cerise.jpg" alt="Julietta Cerise">
+      <div class="tag-badge" data-i18n="cat_badge_special_sprays">Special Sprays</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_julietta_cerise">Julietta Cerise</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_cerise">Cerise</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 3 - 5<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
+      </div>
+      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="flower-card" data-category="special_sprays">
+    <div class="card-img-container">
+      <img src="assets/special_sprays/julietta_honey.jpg" alt="Julietta Honey">
+      <div class="tag-badge" data-i18n="cat_badge_special_sprays">Special Sprays</div>
+    </div>
+    <div class="card-content">
+      <div>
+        <h3 class="fc-title" data-i18n="flw_name_julietta_honey">Julietta Honey</h3>
+        <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_coral_pink">Coral Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
       <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
@@ -187,15 +614,23 @@
 </div>
 
 <script>
-  // Simple filter logic for this static page
   document.addEventListener('DOMContentLoaded', () => {
     const pills = document.querySelectorAll('.filter-pill');
+    const cards = document.querySelectorAll('.flower-card');
+
     pills.forEach(pill => {
       pill.addEventListener('click', () => {
         pills.forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
-        // A real filter would hide/show elements based on category attribute here.
-        // For static demo, we just keep them all visible or one could write simple JS to filter by text.
+        
+        const category = pill.getAttribute('data-category');
+        cards.forEach(card => {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
       });
     });
   });
