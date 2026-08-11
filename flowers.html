@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hala Flora - Flowers</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://flagcdn.com; connect-src 'self' https://formsubmit.co;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+    <title>Premium Kenyan Flowers - Roses, Spray Roses & Summer Flowers | Hala Flora</title>
+    <meta name="description" content="Explore our collection of premium fresh-cut flowers, including vibrant standard roses, elegant spray roses, and exquisite summer flowers sourced directly from Kenya.">
+    <meta name="keywords" content="premium Kenyan roses, spray roses Kenya, summer flowers export, fresh-cut flowers Kenya, flower collection, Hala Flora flowers">
+    <link rel="canonical" href="https://halaflora.co.ke/flowers">
+
+    <!-- GEO Tags (Targeting Saudi Arabia & Kenya) -->
+    <meta name="geo.region" content="SA, KE">
+    <meta name="geo.placename" content="Riyadh, Nairobi">
+    <meta name="geo.position" content="23.8859;45.0792">
+    <meta name="ICBM" content="23.8859, 45.0792">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://halaflora.co.ke/flowers">
+    <meta property="og:title" content="Premium Kenyan Flowers - Roses, Spray Roses & Summer Flowers | Hala Flora">
+    <meta property="og:description" content="Explore our collection of premium fresh-cut flowers, including vibrant standard roses, elegant spray roses, and exquisite summer flowers sourced directly from Kenya.">
+    <meta property="og:image" content="https://halaflora.co.ke/assets/images/logo.png">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium Kenyan Flowers - Roses, Spray Roses & Summer Flowers | Hala Flora">
+    <meta name="twitter:description" content="Explore our collection of premium fresh-cut flowers, including vibrant standard roses, elegant spray roses, and exquisite summer flowers sourced directly from Kenya.">
+    <meta name="twitter:image" content="https://halaflora.co.ke/assets/images/logo.png">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" integrity="sha384-aQuvIWWIbpu/mSqULLDiUveyYiPoJzPKAWjUmGJ+Elm+N/LJhzfZqsutsfw870JS" crossorigin="anonymous" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Hala Flora",
+      "image": "https://halaflora.co.ke/assets/images/logo.png",
+      "url": "https://halaflora.co.ke/flowers",
+      "telephone": "+966506532392",
+      "email": "info@halaflora.co.ke",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SA"
+      },
+      "description": "Saudi-Kenyan company specializing in the export of premium fresh-cut flowers. Exceptional quality blooms delivered globally."
+    }
+    </script>
 </head>
 <body>
   <!-- Preloader -->
@@ -17,18 +64,18 @@
     <nav id="navbar" class="navbar">
       <div class="nav-inner">
         <div class="swoosh-bg"></div>
-        <a href="index.html" class="nav-logo">
+        <a href="index" class="nav-logo">
           <img src="assets/images/logo.png" alt="Hala Flora Logo">
         </a>
         <div class="nav-links-desktop">
-          <a href="index.html" class="nav-link "><span data-i18n="nav_home">Home</span><div class="indicator"></div></a>
-          <a href="about.html" class="nav-link "><span data-i18n="nav_about">About</span><div class="indicator"></div></a>
-          <a href="flowers.html" class="nav-link active"><span data-i18n="nav_flowers">Flowers</span><div class="indicator"></div></a>
-          <a href="contact.html" class="nav-link "><span data-i18n="nav_contact">Contact</span><div class="indicator"></div></a>
+          <a href="index" class="nav-link "><span data-i18n="nav_home">Home</span><div class="indicator"></div></a>
+          <a href="about" class="nav-link "><span data-i18n="nav_about">About</span><div class="indicator"></div></a>
+          <a href="flowers" class="nav-link active"><span data-i18n="nav_flowers">Flowers</span><div class="indicator"></div></a>
+          <a href="contact" class="nav-link "><span data-i18n="nav_contact">Contact</span><div class="indicator"></div></a>
         </div>
         <div class="nav-actions">
           <button id="lang-toggle" class="lang-toggle"><span class="fi fi-sa"></span> ترجمة للعربية</button>
-          <a href="https://wa.me/254141748030" target="_blank" class="btn btn-whatsapp">
+          <a href="https://wa.me/966506532392" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
             <i class="fa-brands fa-whatsapp"></i><span data-i18n="btn_whatsapp">WhatsApp Us</span>
           </a>
           <button id="mobile-menu-btn" class="mobile-menu-btn">
@@ -37,10 +84,10 @@
         </div>
       </div>
       <div id="mobile-menu" class="mobile-menu">
-        <a href="index.html" class="" data-i18n="nav_home">Home</a>
-        <a href="about.html" class="" data-i18n="nav_about">About</a>
-        <a href="flowers.html" class="active" data-i18n="nav_flowers">Flowers</a>
-        <a href="contact.html" class="" data-i18n="nav_contact">Contact</a>
+        <a href="index" class="" data-i18n="nav_home">Home</a>
+        <a href="about" class="" data-i18n="nav_about">About</a>
+        <a href="flowers" class="active" data-i18n="nav_flowers">Flowers</a>
+        <a href="contact" class="" data-i18n="nav_contact">Contact</a>
       </div>
     </nav>
   
@@ -103,7 +150,7 @@
         <h3 class="fc-title" data-i18n="flw_name_ever_red">Ever Red</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_red">Red</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80/90 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 7 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -117,7 +164,7 @@
         <h3 class="fc-title" data-i18n="flw_name_mandala">Mandala</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_color_white_pink">Bi Color (White/pink)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -131,7 +178,7 @@
         <h3 class="fc-title" data-i18n="flw_name_hotspot">Hotspot</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_ceres">Ceres</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -145,7 +192,7 @@
         <h3 class="fc-title" data-i18n="flw_name_paloma_royale">Paloma Royale</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_ceres">Ceres</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -159,7 +206,7 @@
         <h3 class="fc-title" data-i18n="flw_name_pink_floyd">Pink Floyd</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_hot_pink">Hot Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -173,7 +220,7 @@
         <h3 class="fc-title" data-i18n="flw_name_fluence">Fluence</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour_white_pink">Bi-Colour (White/Pink)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80/90 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -187,7 +234,7 @@
         <h3 class="fc-title" data-i18n="flw_name_paloma_vintage">Paloma Vintage</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour">Bi-colour</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -201,7 +248,7 @@
         <h3 class="fc-title" data-i18n="flw_name_paloma">Paloma</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour">Bi-colour</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -215,7 +262,7 @@
         <h3 class="fc-title" data-i18n="flw_name_superstition">Superstition</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_salmon">Salmon</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80/90 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -229,7 +276,7 @@
         <h3 class="fc-title" data-i18n="flw_name_jumilia">Jumilia</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour_white_red">Bi-Colour (White/Red)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -243,7 +290,7 @@
         <h3 class="fc-title" data-i18n="flw_name_pomarosa">Pomarosa</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_peach">Peach</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80/90 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -257,7 +304,7 @@
         <h3 class="fc-title" data-i18n="flw_name_albatros">Albatros</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_white">White</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -271,7 +318,7 @@
         <h3 class="fc-title" data-i18n="flw_name_yelloween">Yelloween</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_yellow">Yellow</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80/90 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 7 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -285,7 +332,7 @@
         <h3 class="fc-title" data-i18n="flw_name_roxanne">Roxanne</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_cream_peach">Cream Peach</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -299,7 +346,7 @@
         <h3 class="fc-title" data-i18n="flw_name_novavita">Novavita</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_white">White</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 7 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -313,7 +360,7 @@
         <h3 class="fc-title" data-i18n="flw_name_proud">Proud</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_white">White</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5.5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -328,7 +375,7 @@
         <h3 class="fc-title" data-i18n="flw_name_madam_red">Madam Red</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_red">Red</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -342,7 +389,7 @@
         <h3 class="fc-title" data-i18n="flw_name_revival">Revival</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_pink">Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -356,7 +403,7 @@
         <h3 class="fc-title" data-i18n="flw_name_madam_ceres">Madam Ceres</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_ceres">Ceres</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -370,7 +417,7 @@
         <h3 class="fc-title" data-i18n="flw_name_pink_athena">Pink Athena</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_pink">Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -384,7 +431,7 @@
         <h3 class="fc-title" data-i18n="flw_name_fire_and_flame">Fire and Flame</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour_red_yellow">Bi-Colour (Red/Yellow)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 4.5 - 5.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -398,7 +445,7 @@
         <h3 class="fc-title" data-i18n="flw_name_confidential">Confidential</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_orange">Orange</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -412,7 +459,7 @@
         <h3 class="fc-title" data-i18n="flw_name_athena_royale">Athena Royale</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_pink">Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -426,7 +473,7 @@
         <h3 class="fc-title" data-i18n="flw_name_gold_finch">Gold Finch</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_yellow">Yellow</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -440,7 +487,7 @@
         <h3 class="fc-title" data-i18n="flw_name_deep_purple">Deep Purple</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour_purple_lilac">Bi colour(Purple/Lilac)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -454,7 +501,7 @@
         <h3 class="fc-title" data-i18n="flw_name_good_times">Good Times</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_yellow">Yellow</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 5.5 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -468,7 +515,7 @@
         <h3 class="fc-title" data-i18n="flw_name_athena">Athena</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_white">White</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong>Bud Size:</strong> 5 - 6 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -483,7 +530,7 @@
         <h3 class="fc-title" data-i18n="flw_name_red_trend_setter">Red Trend Setter</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_red">Red</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -497,7 +544,7 @@
         <h3 class="fc-title" data-i18n="flw_name_apricot_lace">Apricot Lace</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_apricot">Apricot</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -511,7 +558,7 @@
         <h3 class="fc-title" data-i18n="flw_name_silva_pink">Silva Pink</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_pink">Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 3 - 5<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -525,7 +572,7 @@
         <h3 class="fc-title" data-i18n="flw_name_royal_magic">Royal Magic</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_ceres">Ceres</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -539,7 +586,7 @@
         <h3 class="fc-title" data-i18n="flw_name_summer_rose">Summer Rose</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_cream_peach">Cream/Peach</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -553,7 +600,7 @@
         <h3 class="fc-title" data-i18n="flw_name_mansfield_park">Mansfield Park</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_bi_colour_blush">Bi-Colour (Blush)</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 40/50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 3 - 5<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -567,7 +614,7 @@
         <h3 class="fc-title" data-i18n="flw_name_ice_flow">Ice Flow</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_white">White</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -581,7 +628,7 @@
         <h3 class="fc-title" data-i18n="flw_name_julietta">Julietta</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_pink">Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -595,7 +642,7 @@
         <h3 class="fc-title" data-i18n="flw_name_julietta_cerise">Julietta Cerise</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_cerise">Cerise</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60/70/80 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 3 - 5<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -609,7 +656,7 @@
         <h3 class="fc-title" data-i18n="flw_name_julietta_honey">Julietta Honey</h3>
         <p class="fc-subtitle"><strong><span data-i18n="lbl_colour">Colour</span>:</strong> <span data-i18n="col_coral_pink">Coral Pink</span><br><strong><span data-i18n="lbl_stem_length">Stem Length</span>:</strong> 50/60 <span data-i18n=\"lbl_cm\">cm</span><br><strong><span data-i18n="lbl_buds_stem">Buds/Stem</span>:</strong> 4 - 6<br><strong><span data-i18n="lbl_vase_life">Vase Life</span>:</strong> 10 - 14 <span data-i18n=\"lbl_days\">days</span></p>
       </div>
-      <a href="contact.html" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact" class="inquire-btn"><span data-i18n="btn_inquire">Inquire</span> <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 </div>
@@ -645,18 +692,18 @@
           </div>
           <p class="footer-tagline" data-i18n="footer_tagline">Exporting fresh cut flowers globally with care. From our farms directly to your port of entry.</p>
           <div class="social-icons">
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
         <div class="footer-col">
           <h3 data-i18n="footer_quick_links">Quick Links</h3>
-          <a href="index.html" class="footer-link" data-i18n="nav_home">Home</a>
-          <a href="about.html" class="footer-link" data-i18n="footer_our_story">Our Story</a>
-          <a href="flowers.html" class="footer-link" data-i18n="footer_floral_collection">Floral Collection</a>
-          <a href="contact.html" class="footer-link" data-i18n="footer_contact_us">Contact Us</a>
+          <a href="index" class="footer-link" data-i18n="nav_home">Home</a>
+          <a href="about" class="footer-link" data-i18n="footer_our_story">Our Story</a>
+          <a href="flowers" class="footer-link" data-i18n="footer_floral_collection">Floral Collection</a>
+          <a href="contact" class="footer-link" data-i18n="footer_contact_us">Contact Us</a>
         </div>
         <div class="footer-col">
           <h3 data-i18n="footer_legal_support">Legal & Support</h3>
@@ -674,7 +721,6 @@
           <div class="footer-contact">
             <i class="fa-solid fa-phone-alt"></i>
             <div>🇸🇦 +966506532392</div>
-            <div>🇰🇪 +254141748030</div>
           </div>
           <div class="footer-contact">
             <i class="fa-solid fa-map-marker-alt"></i>

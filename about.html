@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hala Flora - About Us</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://flagcdn.com; connect-src 'self' https://formsubmit.co;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+    <title>Hala Flora - About Us | Our Saudi-Kenyan Partnership</title>
+    <meta name="description" content="Learn about Hala Flora's mission and vision. Combining Saudi business expertise with Kenya’s world-renowned flower industry to supply premium flowers globally.">
+    <meta name="keywords" content="about Hala Flora, Saudi Kenyan company, premium Kenyan flowers, fresh-cut flowers Kenya, flower export Saudi Arabia, Hala Flora mission">
+    <link rel="canonical" href="https://halaflora.co.ke/about">
+
+    <!-- GEO Tags (Targeting Saudi Arabia & Kenya) -->
+    <meta name="geo.region" content="SA, KE">
+    <meta name="geo.placename" content="Riyadh, Nairobi">
+    <meta name="geo.position" content="23.8859;45.0792">
+    <meta name="ICBM" content="23.8859, 45.0792">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://halaflora.co.ke/about">
+    <meta property="og:title" content="Hala Flora - About Us | Our Saudi-Kenyan Partnership">
+    <meta property="og:description" content="Learn about Hala Flora's mission and vision. Combining Saudi business expertise with Kenya’s world-renowned flower industry to supply premium flowers globally.">
+    <meta property="og:image" content="https://halaflora.co.ke/assets/images/logo.png">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hala Flora - About Us | Our Saudi-Kenyan Partnership">
+    <meta name="twitter:description" content="Learn about Hala Flora's mission and vision. Combining Saudi business expertise with Kenya’s world-renowned flower industry to supply premium flowers globally.">
+    <meta name="twitter:image" content="https://halaflora.co.ke/assets/images/logo.png">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" integrity="sha384-aQuvIWWIbpu/mSqULLDiUveyYiPoJzPKAWjUmGJ+Elm+N/LJhzfZqsutsfw870JS" crossorigin="anonymous" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Hala Flora",
+      "image": "https://halaflora.co.ke/assets/images/logo.png",
+      "url": "https://halaflora.co.ke/about",
+      "telephone": "+966506532392",
+      "email": "info@halaflora.co.ke",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SA"
+      },
+      "description": "Saudi-Kenyan company specializing in the export of premium fresh-cut flowers. Exceptional quality blooms delivered globally."
+    }
+    </script>
 </head>
 <body>
   <!-- Preloader -->
@@ -17,18 +64,18 @@
     <nav id="navbar" class="navbar">
       <div class="nav-inner">
         <div class="swoosh-bg"></div>
-        <a href="index.html" class="nav-logo">
+        <a href="index" class="nav-logo">
           <img src="assets/images/logo.png" alt="Hala Flora Logo">
         </a>
         <div class="nav-links-desktop">
-          <a href="index.html" class="nav-link "><span data-i18n="nav_home">Home</span><div class="indicator"></div></a>
-          <a href="about.html" class="nav-link active"><span data-i18n="nav_about">About</span><div class="indicator"></div></a>
-          <a href="flowers.html" class="nav-link "><span data-i18n="nav_flowers">Flowers</span><div class="indicator"></div></a>
-          <a href="contact.html" class="nav-link "><span data-i18n="nav_contact">Contact</span><div class="indicator"></div></a>
+          <a href="index" class="nav-link "><span data-i18n="nav_home">Home</span><div class="indicator"></div></a>
+          <a href="about" class="nav-link active"><span data-i18n="nav_about">About</span><div class="indicator"></div></a>
+          <a href="flowers" class="nav-link "><span data-i18n="nav_flowers">Flowers</span><div class="indicator"></div></a>
+          <a href="contact" class="nav-link "><span data-i18n="nav_contact">Contact</span><div class="indicator"></div></a>
         </div>
         <div class="nav-actions">
           <button id="lang-toggle" class="lang-toggle"><span class="fi fi-sa"></span> ترجمة للعربية</button>
-          <a href="https://wa.me/254141748030" target="_blank" class="btn btn-whatsapp">
+          <a href="https://wa.me/966506532392" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
             <i class="fa-brands fa-whatsapp"></i><span data-i18n="btn_whatsapp">WhatsApp Us</span>
           </a>
           <button id="mobile-menu-btn" class="mobile-menu-btn">
@@ -37,10 +84,10 @@
         </div>
       </div>
       <div id="mobile-menu" class="mobile-menu">
-        <a href="index.html" class="" data-i18n="nav_home">Home</a>
-        <a href="about.html" class="active" data-i18n="nav_about">About</a>
-        <a href="flowers.html" class="" data-i18n="nav_flowers">Flowers</a>
-        <a href="contact.html" class="" data-i18n="nav_contact">Contact</a>
+        <a href="index" class="" data-i18n="nav_home">Home</a>
+        <a href="about" class="active" data-i18n="nav_about">About</a>
+        <a href="flowers" class="" data-i18n="nav_flowers">Flowers</a>
+        <a href="contact" class="" data-i18n="nav_contact">Contact</a>
       </div>
     </nav>
   
@@ -191,18 +238,18 @@
           </div>
           <p class="footer-tagline" data-i18n="footer_tagline">Exporting fresh cut flowers globally with care. From our farms directly to your port of entry.</p>
           <div class="social-icons">
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
         <div class="footer-col">
           <h3 data-i18n="footer_quick_links">Quick Links</h3>
-          <a href="index.html" class="footer-link" data-i18n="nav_home">Home</a>
-          <a href="about.html" class="footer-link" data-i18n="footer_our_story">Our Story</a>
-          <a href="flowers.html" class="footer-link" data-i18n="footer_floral_collection">Floral Collection</a>
-          <a href="contact.html" class="footer-link" data-i18n="footer_contact_us">Contact Us</a>
+          <a href="index" class="footer-link" data-i18n="nav_home">Home</a>
+          <a href="about" class="footer-link" data-i18n="footer_our_story">Our Story</a>
+          <a href="flowers" class="footer-link" data-i18n="footer_floral_collection">Floral Collection</a>
+          <a href="contact" class="footer-link" data-i18n="footer_contact_us">Contact Us</a>
         </div>
         <div class="footer-col">
           <h3 data-i18n="footer_legal_support">Legal & Support</h3>
@@ -220,7 +267,6 @@
           <div class="footer-contact">
             <i class="fa-solid fa-phone-alt"></i>
             <div>🇸🇦 +966506532392</div>
-            <div>🇰🇪 +254141748030</div>
           </div>
           <div class="footer-contact">
             <i class="fa-solid fa-map-marker-alt"></i>
