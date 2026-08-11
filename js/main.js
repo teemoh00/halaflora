@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Update button text
     if (langToggle) {
-      langToggle.innerHTML = lang === 'ar' ? '<i class="fa-solid fa-globe"></i> Translate to English' : '<i class="fa-solid fa-globe"></i> ترجمة للعربية';
+      langToggle.innerHTML = lang === 'ar' ? '🇰🇪 Translate to English' : '🇸🇦 ترجمة للعربية';
     }
 
     // Replace text in elements with data-i18n
