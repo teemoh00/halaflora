@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   const preloader = document.getElementById('preloader');
   if (preloader) {
     setTimeout(() => {
